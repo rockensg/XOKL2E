@@ -4,6 +4,13 @@ LABEL		description="Felhő Container"
 RUN		yum install -y httpd && \
 		yum clean all
 COPY		./Felho/index.html /var/www/html/
-		./Felho/adsl.png /var/www/html/
+COPY		./Felho/adsl.png /var/www/html/
+COPY		./Felho/aon.png /var/www/html/
+COPY		./Felho/img7.jpg /var/www/html/
+COPY		./Felho/koax.png /var/www/html/
+COPY		./Felho/pon.png /var/www/html/
+COPY		./Felho/pstn.jpg /var/www/html/
+COPY		./Felho/topologia.png /var/www/html/
+COPY		./Felho/w-m-l.gif /var/www/html/
 EXPOSE		80
 CMD		["httpd", "-D", "FOREGROUND"]
